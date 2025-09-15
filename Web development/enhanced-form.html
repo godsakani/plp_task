@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Content Showcase & Enhanced Form</title>
+    <meta
+      name="description"
+      content="Demonstration of lists, tables, media, and a comprehensive HTML5 form with native validation."
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+      <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#form">Enhanced Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article id="lists" aria-labelledby="lists-heading">
+        <header>
+          <h2 id="lists-heading">Organizing Content with Lists</h2>
+        </header>
+        <section aria-labelledby="unordered-heading">
+          <h3 id="unordered-heading">Unordered List</h3>
+          <p>Core HTML5 content building blocks:</p>
+          <ul>
+            <li>Semantic structure</li>
+            <li>Accessible navigation</li>
+            <li>Meaningful headings</li>
+            <li>Forms with native validation</li>
+          </ul>
+        </section>
+        <section aria-labelledby="ordered-heading">
+          <h3 id="ordered-heading">Ordered List</h3>
+          <p>Typical steps to plan a page:</p>
+          <ol>
+            <li>Define the information architecture</li>
+            <li>Choose semantic elements</li>
+            <li>Structure content with headings</li>
+            <li>Implement accessible forms</li>
+          </ol>
+        </section>
+        <section aria-labelledby="description-heading">
+          <h3 id="description-heading">Description List</h3>
+          <p>Key terms used in this page:</p>
+          <dl>
+            <dt>ARIA</dt>
+            <dd>
+              Attributes that improve accessibility for assistive technologies.
+            </dd>
+            <dt>Validation</dt>
+            <dd>
+              Rules that guide and restrict what users can submit in forms.
+            </dd>
+            <dt>Landmark</dt>
+            <dd>
+              Semantic region of a page to aid navigation (e.g., main, nav).
+            </dd>
+          </dl>
+        </section>
+      </article>
+
+      <article id="table" aria-labelledby="table-heading">
+        <header>
+          <h2 id="table-heading">Accessible Data Table</h2>
+        </header>
+        <p>This table includes a caption, headers, and scope for clarity.</p>
+        <table>
+          <caption>
+            Course Modules and Estimated Effort
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Module</th>
+              <th scope="col">Topics</th>
+              <th scope="col">Estimated Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML5 Basics</th>
+              <td>Semantics, Headings, Landmarks</td>
+              <td>2 hours</td>
+            </tr>
+            <tr>
+              <th scope="row">Accessibility</th>
+              <td>Labels, ARIA, Keyboard Navigation</td>
+              <td>2 hours</td>
+            </tr>
+            <tr>
+              <th scope="row">Forms</th>
+              <td>Inputs, Validation, UX</td>
+              <td>3 hours</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Total</th>
+              <td>—</td>
+              <td>7 hours</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <article id="media" aria-labelledby="media-heading">
+        <header>
+          <h2 id="media-heading">Embedding Media</h2>
+        </header>
+        <section aria-labelledby="image-heading">
+          <h3 id="image-heading">Image</h3>
+          <figure>
+            <img
+              src="https://via.placeholder.com/800x400"
+              alt="Abstract illustration symbolizing multimedia content"
+              loading="lazy"
+            />
+            <figcaption>
+              Descriptive alt text supports users and SEO.
+            </figcaption>
+          </figure>
+        </section>
+        <section aria-labelledby="audio-heading">
+          <h3 id="audio-heading">Audio</h3>
+          <audio controls>
+            <source
+              src="https://www.w3schools.com/html/horse.ogg"
+              type="audio/ogg"
+            />
+            <source
+              src="https://www.w3schools.com/html/horse.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+        <section aria-labelledby="video-heading">
+          <h3 id="video-heading">Video</h3>
+          <video
+            controls
+            width="560"
+            poster="https://via.placeholder.com/560x315"
+          >
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.ogg"
+              type="video/ogg"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+      </article>
+
+      <article id="form" aria-labelledby="form-heading">
+        <header>
+          <h2 id="form-heading">Complete HTML5 Form with Native Validation</h2>
+          <p id="form-hint">All fields marked with * are required.</p>
+        </header>
+
+        <form action="#" method="post" aria-describedby="form-hint">
+          <fieldset>
+            <legend>Account Details</legend>
+            <p>
+              <label for="username">Username *</label><br />
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="e.g., johndoe"
+                minlength="3"
+                maxlength="20"
+                autocomplete="username"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="email">Email *</label><br />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password *</label><br />
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="At least 8 chars, 1 number"
+                minlength="8"
+                pattern="(?=.*\d).{8,}"
+                title="At least 8 characters and at least one number"
+                autocomplete="new-password"
+                required
+                aria-describedby="password-hint"
+              />
+            </p>
+            <p id="password-hint">
+              Use 8+ characters with at least one number.
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              <label for="full-name">Full name *</label><br />
+              <input
+                id="full-name"
+                name="full-name"
+                type="text"
+                placeholder="Jane Doe"
+                autocomplete="name"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone</label><br />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="e.g., +1 555 123 4567"
+                inputmode="tel"
+                pattern="^[+]?[-\d\s()]{7,}$"
+                title="Enter a valid phone number"
+                autocomplete="tel"
+              />
+            </p>
+            <p>
+              <label for="website">Website</label><br />
+              <input
+                id="website"
+                name="website"
+                type="url"
+                placeholder="https://example.com"
+                autocomplete="url"
+              />
+            </p>
+            <p>
+              <label for="age">Age</label><br />
+              <input
+                id="age"
+                name="age"
+                type="number"
+                min="13"
+                max="120"
+                step="1"
+                placeholder="18"
+              />
+            </p>
+            <p>
+              <label for="birthdate">Birth date</label><br />
+              <input id="birthdate" name="birthdate" type="date" />
+            </p>
+            <p>
+              <label for="favorite-color">Favorite color</label><br />
+              <input
+                id="favorite-color"
+                name="favorite-color"
+                type="color"
+                value="#3366ff"
+              />
+            </p>
+            <p>
+              <label for="country">Country *</label><br />
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="ng">Nigeria</option>
+                <option value="ke">Kenya</option>
+                <option value="gh">Ghana</option>
+                <option value="za">South Africa</option>
+                <option value="us">United States</option>
+              </select>
+            </p>
+            <p>
+              <label for="city">City</label><br />
+              <input
+                list="city-options"
+                id="city"
+                name="city"
+                placeholder="Start typing..."
+              />
+              <datalist id="city-options">
+                <option value="Lagos"></option>
+                <option value="Nairobi"></option>
+                <option value="Accra"></option>
+                <option value="Johannesburg"></option>
+                <option value="New York"></option>
+              </datalist>
+            </p>
+            <p>
+              <label for="bio">Short bio</label><br />
+              <textarea
+                id="bio"
+                name="bio"
+                rows="4"
+                maxlength="300"
+                placeholder="Tell us about yourself (max 300 chars)"
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <p>Newsletter frequency:</p>
+            <p>
+              <input
+                type="radio"
+                id="freq-weekly"
+                name="frequency"
+                value="weekly"
+                required
+              />
+              <label for="freq-weekly">Weekly</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="freq-monthly"
+                name="frequency"
+                value="monthly"
+              />
+              <label for="freq-monthly">Monthly</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="freq-quarterly"
+                name="frequency"
+                value="quarterly"
+              />
+              <label for="freq-quarterly">Quarterly</label>
+            </p>
+
+            <p>Topics you like (choose any):</p>
+            <p>
+              <input
+                type="checkbox"
+                id="topic-html"
+                name="topics"
+                value="html"
+              />
+              <label for="topic-html">HTML</label>
+            </p>
+            <p>
+              <input type="checkbox" id="topic-css" name="topics" value="css" />
+              <label for="topic-css">CSS</label>
+            </p>
+            <p>
+              <input type="checkbox" id="topic-js" name="topics" value="js" />
+              <label for="topic-js">JavaScript</label>
+            </p>
+
+            <p>
+              <label for="satisfaction">Satisfaction (0–10)</label><br />
+              <input
+                id="satisfaction"
+                name="satisfaction"
+                type="range"
+                min="0"
+                max="10"
+                step="1"
+                value="5"
+              />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Attachments & Misc</legend>
+            <p>
+              <label for="avatar">Upload avatar</label><br />
+              <input id="avatar" name="avatar" type="file" accept="image/*" />
+            </p>
+            <p>
+              <label for="referral">Referral code</label><br />
+              <input
+                id="referral"
+                name="referral"
+                type="text"
+                value="COURSE-2025"
+                readonly
+              />
+            </p>
+            <input type="hidden" name="form-version" value="v1" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmation</legend>
+            <p>
+              <input id="terms" name="terms" type="checkbox" required />
+              <label for="terms"
+                >I agree to the terms and privacy policy *</label
+              >
+            </p>
+            <p>
+              <button type="submit">Submit Form</button>
+              <button type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; <time datetime="2025">2025</time> HTML5 Showcase</p>
+    </footer>
+  </body>
+</html>
