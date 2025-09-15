@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessible & SEO-Friendly HTML5 Page</title>
+    <meta
+      name="description"
+      content="A simple, semantic HTML5 page that demonstrates accessibility best practices and basic SEO."
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+      <p>Sample Semantic Site</p>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Accessibility</a></li>
+          <li><a href="#seo">SEO Basics</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Building with HTML5, Accessibility, and SEO in Mind</h1>
+
+      <article id="about">
+        <header>
+          <h2>About This Page</h2>
+        </header>
+        <p>
+          This page demonstrates a clean HTML5 structure using semantic elements
+          and accessibility best practices, while also including basic on-page
+          SEO. It avoids presentational markup and focuses on meaningful content
+          and structure.
+        </p>
+        <figure>
+          <img
+            src="https://via.placeholder.com/800x400"
+            alt="Illustration representing accessible and optimized web content"
+            loading="lazy"
+          />
+          <figcaption>
+            A representative image with descriptive alternative text.
+          </figcaption>
+        </figure>
+      </article>
+
+      <section id="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Accessibility Highlights</h2>
+        <ul>
+          <li>
+            <strong>Landmarks</strong>: Uses <code>header</code>,
+            <code>nav</code>, <code>main</code>, <code>article</code>,
+            <code>section</code>, <code>aside</code>, and <code>footer</code>.
+          </li>
+          <li>
+            <strong>Headings</strong>: Logical hierarchy with a single
+            page-level <code>h1</code>.
+          </li>
+          <li>
+            <strong>Skip link</strong>: Jump directly to the main content.
+          </li>
+          <li>
+            <strong>Labels</strong>: Form controls are properly associated with
+            labels.
+          </li>
+          <li>
+            <strong>Alt text</strong>: Images include meaningful
+            <code>alt</code> descriptions.
+          </li>
+        </ul>
+      </section>
+
+      <section id="seo" aria-labelledby="seo-heading">
+        <h2 id="seo-heading">SEO Basics in This Page</h2>
+        <ul>
+          <li><strong>Title</strong>: Descriptive and concise page title.</li>
+          <li>
+            <strong>Meta description</strong>: Summarizes page purpose for
+            search results.
+          </li>
+          <li>
+            <strong>Semantic HTML</strong>: Helps search engines understand
+            content structure.
+          </li>
+          <li>
+            <strong>Meaningful headings</strong>: Clear content hierarchy for
+            crawlability.
+          </li>
+          <li>
+            <strong>Readable content</strong>: Human-friendly language and clear
+            sections.
+          </li>
+        </ul>
+      </section>
+
+      <aside aria-labelledby="note-heading">
+        <h2 id="note-heading">Note</h2>
+        <p>
+          No CSS or JavaScript is used here, per the assignment. In a real
+          project, CSS would visually style the skip link and layout without
+          altering the semantic structure.
+        </p>
+      </aside>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Use the form below to share feedback about this example.</p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Send a message</legend>
+            <p>
+              <label for="name">Name</label><br />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email</label><br />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Message</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section aria-labelledby="footer-about-heading">
+        <h2 id="footer-about-heading">About the Author</h2>
+        <address>
+          <p>
+            Written by <span>Your Name</span> ·
+            <time datetime="2025-09-15">September 15, 2025</time>
+          </p>
+          <p>
+            <a href="mailto:nyonggodwill@gmail.com">nyonggodwill@gmail.com</a>
+          </p>
+        </address>
+      </section>
+      <p>&copy; <time datetime="2025">2025</time> Sample Semantic Site</p>
+    </footer>
+  </body>
+</html>
