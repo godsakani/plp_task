@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub - E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">LearnHub</h1>
+        <nav class="nav">
+          <a href="#" class="nav-link active" onclick="showHome()">Courses</a>
+          <a href="#" class="nav-link">My Learning</a>
+        </nav>
+        <div class="auth-section" id="auth-section">
+          <button class="auth-btn" onclick="showLogin()">Login</button>
+          <button class="auth-btn primary" onclick="showRegister()">
+            Sign Up
+          </button>
+        </div>
+        <div class="user-section" id="user-section" style="display: none">
+          <span class="welcome-text" id="welcome-text">Welcome, User!</span>
+          <button class="auth-btn" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Home Page -->
+      <div id="home-page" class="page active">
+        <div class="container">
+          <section class="hero">
+            <h2 class="hero-title">Expand Your Skills</h2>
+            <p class="hero-subtitle">
+              Choose from our curated selection of courses and start learning
+              today
+            </p>
+          </section>
+
+          <section class="courses-grid" id="courses-grid">
+            <!-- Courses will be dynamically loaded here -->
+          </section>
+        </div>
+      </div>
+
+      <!-- Course Detail Page -->
+      <div id="course-page" class="page">
+        <div class="container">
+          <button class="back-btn" onclick="showHome()">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            Back to Courses
+          </button>
+
+          <div class="course-detail" id="course-detail">
+            <!-- Course details will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Login Page -->
+      <div id="login-page" class="page">
+        <div class="container">
+          <div class="auth-container">
+            <div class="auth-form">
+              <h2 class="auth-title">Welcome Back</h2>
+              <p class="auth-subtitle">
+                Sign in to continue your learning journey
+              </p>
+
+              <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                  <label for="login-email">Email</label>
+                  <input
+                    type="email"
+                    id="login-email"
+                    required
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="login-password">Password</label>
+                  <input
+                    type="password"
+                    id="login-password"
+                    required
+                    placeholder="Enter your password"
+                  />
+                </div>
+
+                <button type="submit" class="auth-submit-btn">Sign In</button>
+              </form>
+
+              <div class="auth-switch">
+                <p>
+                  Don't have an account?
+                  <a href="#" onclick="showRegister()">Sign up here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Page -->
+      <div id="register-page" class="page">
+        <div class="container">
+          <div class="auth-container">
+            <div class="auth-form">
+              <h2 class="auth-title">Join LearnHub</h2>
+              <p class="auth-subtitle">
+                Create your account and start learning today
+              </p>
+
+              <form id="register-form" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                  <label for="register-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="register-name"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-email">Email</label>
+                  <input
+                    type="email"
+                    id="register-email"
+                    required
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-password">Password</label>
+                  <input
+                    type="password"
+                    id="register-password"
+                    required
+                    placeholder="Create a password"
+                    minlength="6"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-confirm-password"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    id="register-confirm-password"
+                    required
+                    placeholder="Confirm your password"
+                  />
+                </div>
+
+                <button type="submit" class="auth-submit-btn">
+                  Create Account
+                </button>
+              </form>
+
+              <div class="auth-switch">
+                <p>
+                  Already have an account?
+                  <a href="#" onclick="showLogin()">Sign in here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

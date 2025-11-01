@@ -1,0 +1,124 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "JavaScript Fundamentals",
+      "description": "Master the basics of JavaScript programming with hands-on exercises and real-world projects.",
+      "icon": "🚀",
+      "duration": "6 weeks",
+      "lessons": 24,
+      "completed": false,
+      "detailedDescription": "This comprehensive course covers everything you need to know about JavaScript, from variables and functions to advanced concepts like closures and async programming.",
+      "lessonsList": [
+        { "title": "Introduction to JavaScript", "duration": "15 min" },
+        { "title": "Variables and Data Types", "duration": "20 min" },
+        { "title": "Functions and Scope", "duration": "25 min" },
+        { "title": "Objects and Arrays", "duration": "30 min" },
+        { "title": "DOM Manipulation", "duration": "35 min" },
+        { "title": "Event Handling", "duration": "20 min" },
+        { "title": "Async JavaScript", "duration": "40 min" },
+        { "title": "Error Handling", "duration": "25 min" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "React Development",
+      "description": "Build modern web applications with React, including hooks, state management, and component architecture.",
+      "icon": "⚛️",
+      "duration": "8 weeks",
+      "lessons": 32,
+      "completed": false,
+      "detailedDescription": "Learn to build scalable React applications with modern best practices. This course covers components, hooks, state management, routing, and testing.",
+      "lessonsList": [
+        { "title": "React Basics", "duration": "20 min" },
+        { "title": "JSX and Components", "duration": "25 min" },
+        { "title": "Props and State", "duration": "30 min" },
+        { "title": "Event Handling in React", "duration": "20 min" },
+        { "title": "React Hooks", "duration": "45 min" },
+        { "title": "Context API", "duration": "35 min" },
+        { "title": "React Router", "duration": "30 min" },
+        { "title": "Testing React Apps", "duration": "40 min" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "CSS Grid & Flexbox",
+      "description": "Master modern CSS layout techniques to create responsive and beautiful web designs.",
+      "icon": "🎨",
+      "duration": "4 weeks",
+      "lessons": 16,
+      "completed": false,
+      "detailedDescription": "Become proficient in CSS Grid and Flexbox to create complex, responsive layouts with ease. Learn when and how to use each layout method effectively.",
+      "lessonsList": [
+        { "title": "CSS Flexbox Basics", "duration": "25 min" },
+        { "title": "Flex Properties", "duration": "30 min" },
+        { "title": "CSS Grid Introduction", "duration": "20 min" },
+        { "title": "Grid Template Areas", "duration": "35 min" },
+        { "title": "Responsive Design", "duration": "40 min" },
+        { "title": "Grid vs Flexbox", "duration": "25 min" },
+        { "title": "Advanced Grid Techniques", "duration": "45 min" },
+        { "title": "Real-world Projects", "duration": "60 min" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Node.js Backend",
+      "description": "Learn server-side development with Node.js, Express, and database integration.",
+      "icon": "🔧",
+      "duration": "10 weeks",
+      "lessons": 40,
+      "completed": false,
+      "detailedDescription": "Build robust backend applications with Node.js and Express. Learn about APIs, databases, authentication, and deployment strategies.",
+      "lessonsList": [
+        { "title": "Node.js Fundamentals", "duration": "30 min" },
+        { "title": "Express.js Setup", "duration": "25 min" },
+        { "title": "Routing and Middleware", "duration": "35 min" },
+        { "title": "Database Integration", "duration": "45 min" },
+        { "title": "Authentication & Security", "duration": "50 min" },
+        { "title": "API Development", "duration": "40 min" },
+        { "title": "Testing APIs", "duration": "35 min" },
+        { "title": "Deployment", "duration": "30 min" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Python for Data Science",
+      "description": "Learn Python programming with a focus on data analysis, visualization, and machine learning basics.",
+      "icon": "🐍",
+      "duration": "12 weeks",
+      "lessons": 48,
+      "completed": false,
+      "detailedDescription": "Master Python for data science with hands-on projects using pandas, numpy, matplotlib, and scikit-learn. Perfect for beginners and professionals looking to transition into data science.",
+      "lessonsList": [
+        { "title": "Python Basics", "duration": "25 min" },
+        { "title": "Data Types and Structures", "duration": "30 min" },
+        { "title": "NumPy Fundamentals", "duration": "35 min" },
+        { "title": "Pandas for Data Analysis", "duration": "45 min" },
+        { "title": "Data Visualization with Matplotlib", "duration": "40 min" },
+        { "title": "Statistical Analysis", "duration": "50 min" },
+        { "title": "Machine Learning Basics", "duration": "60 min" },
+        { "title": "Real-world Data Projects", "duration": "75 min" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "UI/UX Design Principles",
+      "description": "Master the fundamentals of user interface and user experience design with practical projects.",
+      "icon": "🎯",
+      "duration": "7 weeks",
+      "lessons": 28,
+      "completed": false,
+      "detailedDescription": "Learn design thinking, user research, wireframing, prototyping, and visual design principles. Create stunning user interfaces that provide excellent user experiences.",
+      "lessonsList": [
+        { "title": "Design Thinking Process", "duration": "30 min" },
+        { "title": "User Research Methods", "duration": "35 min" },
+        { "title": "Information Architecture", "duration": "25 min" },
+        { "title": "Wireframing Techniques", "duration": "40 min" },
+        { "title": "Visual Design Principles", "duration": "45 min" },
+        { "title": "Prototyping Tools", "duration": "35 min" },
+        { "title": "Usability Testing", "duration": "30 min" },
+        { "title": "Design Systems", "duration": "50 min" }
+      ]
+    }
+  ]
+}
