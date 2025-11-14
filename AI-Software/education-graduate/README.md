@@ -1,5 +1,8 @@
 # 🎓 Student Success Predictor
 
+## Deploy Link
+
+[Deploy-Link](https://education-graduate-3cgwdpvhysywuznyhjk6du.streamlit.app/)
 An AI-driven solution for predicting student dropout and academic success, supporting **UN SDG 4: Quality Education**.
 
 ## Overview
