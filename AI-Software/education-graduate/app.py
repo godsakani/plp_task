@@ -33,12 +33,11 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
 # Load model artifacts
 @st.cache_resource
 def load_model():
     try:
-        with open('model_artifacts.pkl', 'rb') as f:
+        with open('/AI-Software/education-graduate/model_artifacts.pkl', 'rb') as f:
             artifacts = pickle.load(f)
         return artifacts
     except FileNotFoundError:
