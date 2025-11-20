@@ -3,7 +3,6 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 from PIL import Image, ImageOps
-import cv2
 import matplotlib.pyplot as plt
 
 # Page configuration
