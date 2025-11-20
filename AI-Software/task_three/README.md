@@ -73,3 +73,59 @@ The app will open in your default browser at `http://localhost:8501`
 ## Model File
 
 The app requires `mnist_cnn_model.h5` to be in the same directory. This file contains the trained CNN model weights.
+
+## Deployment
+
+### Streamlit Cloud / Heroku / Cloud Platforms
+
+If you encounter the error: `ImportError: libGL.so.1: cannot open shared object file`
+
+**Solution 1: Use packages.txt (Streamlit Cloud)**
+Create a `packages.txt` file with:
+
+```
+libgl1-mesa-glx
+libglib2.0-0
+```
+
+**Solution 2: Use opencv-python-headless**
+Replace `opencv-python` with `opencv-python-headless` in requirements.txt:
+
+```
+opencv-python-headless
+```
+
+**Note:** The current version of this app doesn't use OpenCV, so it should work without any additional configuration.
+
+### Docker Deployment
+
+If deploying with Docker, add to your Dockerfile:
+
+```dockerfile
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0
+```
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Model not found error**
+
+   - Ensure `mnist_cnn_model.h5` is in the same directory as `app.py`
+   - Check file permissions
+
+2. **TensorFlow installation issues**
+
+   - Use Python 3.8-3.11 (TensorFlow may not support newer versions)
+   - Try: `pip install tensorflow==2.13.0`
+
+3. **Memory issues**
+
+   - The model is ~6MB, ensure sufficient RAM
+   - Close other applications if running locally
+
+4. **Streamlit-drawable-canvas not working**
+   - This is optional for the drawing feature
+   - The upload feature will still work without it
