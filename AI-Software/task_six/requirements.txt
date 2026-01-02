@@ -1,0 +1,29 @@
+# Edge AI Recyclable Classification Requirements
+# AI Future Directions Assignment - Task 1
+
+# Core ML/AI frameworks
+tensorflow>=2.13.0
+tensorflow-lite>=2.13.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Image processing
+Pillow>=8.0.0
+opencv-python>=4.5.0
+
+# Jupyter notebook support (optional)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Utilities
+pathlib2>=2.3.0
+tqdm>=4.62.0
+
+# For IoT simulation (Task 2)
+pandas>=1.3.0
+plotly>=5.0.0
+dash>=2.0.0
